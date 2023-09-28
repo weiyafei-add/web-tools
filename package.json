@@ -1,22 +1,19 @@
 {
-  "name": "web-tools",
-  "version": "1.0.0",
+  "name": "yf-web-tools",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": "https://github.com/weiyafei-add/web-tools.git",
-  "author": "weiyafei <weiyafei@flashwhale.com>",
+  "author": "weiyafei-add",
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "packages/math"
   ],
   "type": "module",
   "scripts": {
-    "build": "cd packages/math && rollup -c rollup.config.mjs"
+    "build:math": "cd packages/math && tsc index.ts --declaration --outdir ../../lib/math"
   },
-  "private": true,
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.4",
     "@types/node": "^20.7.0",
-    "rollup": "^3.29.3",
     "tsc": "^2.0.4",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"

@@ -1,6 +1,6 @@
 {
-  "name": "math",
+  "name": "@yf-web-tools/math",
   "version": "1.0.0",
-  "main": "./lib/index.js",
+  "main": "../../lib/math/index.js",
   "license": "MIT"
 }
